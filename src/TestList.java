@@ -7,5 +7,4 @@ public class TestList {
         System.out.println(c.size());
         c.add("吴嘉豪");
     }
-
 }
