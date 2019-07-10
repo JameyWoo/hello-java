@@ -72,7 +72,7 @@ public class ZenShanGaiCha {
             stmt.executeUpdate(sql);
 
             // 查操作, 查一下id在(100, 500) 以外的行
-            sql = "select * from student where not id between 100 and 500";
+            sql = "select * from student where not id between 100 and 500 order by id desc";
             res = stmt.executeQuery(sql);
             System.out.println("当前数据库数据:");
             while (res.next()) {
